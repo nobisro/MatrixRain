@@ -23,7 +23,7 @@ function Symbol(x, y, speed) {
     this.y = y;
     this.value;
     this.speed = speed;
-    this.switchInterval = round(random(2, 20));
+    this.switchInterval = round(random(6, 30));
 
     this.setToRandomSymbol = function() {
         // set switch interval
@@ -53,11 +53,11 @@ function Symbol(x, y, speed) {
 
 
 }
-
+ 
 function Stream() {
     this.symbols = [];
     //Each stream should know how many symobls it has (5 - 30)
-    this.totalSymbols = round(random(5, 30));
+    this.totalSymbols = round(random(5, 20));
     //Each stream should know how fast it's traveling at (5 - 20)
     this.speed = random(5, 20);
     //Responsibility of each stream to create all of its symbols
